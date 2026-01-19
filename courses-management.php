@@ -475,3 +475,19 @@ function cm_session_field($field, $session_id = null) {
 // INITIALIZE PLUGIN
 // ========================================
 CM();
+
+
+
+// =========================================
+// UPDATE PLUGIN
+// =========================================
+
+require_once CM_PLUGIN_DIR . 'lib/plugin-update-checker/plugin-update-checker.php';
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$cm_update_checker = PucFactory::buildUpdateChecker(
+    'https://github.com/abdonaeim/courses-management/',
+    __FILE__,
+    'courses-management'
+);
