@@ -62,6 +62,7 @@ final class Courses_Management {
             'includes/class-attendance.php',
             'includes/class-shortcodes.php',
             'includes/class-dynamic-data.php',
+            'includes/admin/cm-reports.php',
         ];
         
         foreach ($files as $file) {
